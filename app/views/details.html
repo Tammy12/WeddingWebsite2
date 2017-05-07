@@ -1,0 +1,49 @@
+<section class="col-md-6 detail-page">
+    <div style="font-size: 160%; font-family: 'AR BERKLEY', Georgia, serif;">The Wedding of</div>
+    <div style="font-size: 190%; font-family: 'AR BERKLEY', Georgia, serif;">Dan DeVere & Tammy Xu</div>
+    <div id="info-section" class="center-block">
+        <div class="row text-center">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 col-xs-6" style="line-height: 100%;">
+                <span style="font-size: 150%;">5:30</span>
+                <br />
+                <span style="font-size: 80%;">O'CLOCK</span>
+                <br />
+                <span style="font-size: 80%;">IN THE AFTERNOON</span>
+            </div>
+            <div class="col-sm-2 col-xs-6" id="middle-info">
+                <span>July</span>
+                <br />
+                <span style="font-size: 250%; line-height: 80%;">29</span>
+                <br />
+                <span>2017</span>
+            </div>
+            <div class="col-sm-5 col-xs-12" style="line-height: 100%;">
+                <span style="font-size: 90%;">WOMAN'S CLUB OF EVANSTON</span>
+                <br />
+                1702 CHICAGO AVENUE
+                <br />
+                EVANSTON, IL
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <div>Attire: Semi-Formal</div>
+    <div style="font-size: 140%; font-family: 'AR BERKLEY', Georgia, serif;">dinner and dancing to follow</div>
+    <button type="button" class="btn btn-secondary" data-bind="click: showRsvpModal">RSVP Here!</button>
+    <hr style="border-color: slategrey; width: 200px;"/>
+    <div id="accomodations">ACCOMMODATIONS</div>
+    <div data-bind="foreach: hotels">
+        <div class="col-sm-6 col-md-12 col-xs-12 col-lg-6">
+        <div style="font-size: 150%; font-weight: bold;" data-bind="text: name"></div>
+        <div class="hotel-address">
+            <div data-bind="text: street"></div>
+            <div data-bind="text: city"></div>
+        </div>        
+        <div data-bind="text: phone"></div>
+        <div>Please reference the DeVere/Xu wedding</div>
+        <div>Friday and Saturday $<span data-bind="text: cost"></span>/night</div>
+        <button type="button" class="btn btn-secondary" data-bind="click: function() {window.open(url,'_blank');}">Visit Website</button>
+        </div>
+    </div>
+</section>
