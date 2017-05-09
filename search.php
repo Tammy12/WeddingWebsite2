@@ -14,7 +14,6 @@
     $firstname = $_GET['firstName'];
     $lastname = $_GET['lastName'];
     $mysqli = mysqli_connect('localhost', 'root', '', 'attendance');
-    //$mysqli = mysqli_connect('mysql.dandevere.com', 'tamxu11', 'Ghmar01!', 'tammyanddancom_wedding');
     if(mysqli_connect_errno()) {//$mysqli->connect_errno
         $errResult = new stdClass();
         $errResult->success = false;
