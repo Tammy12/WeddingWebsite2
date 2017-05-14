@@ -1,0 +1,378 @@
+﻿/*!
+ * Durandal 2.1.0 Copyright (c) 2012 Blue Spire Consulting, Inc. All Rights Reserved.
+ * Available via the MIT license.
+ * see: http://durandaljs.com or https://github.com/BlueSpire/Durandal for details
+ */
+
+@font-face {
+    font-family: arberk;
+    src: url(fonts/arberkley.ttf);
+}
+
+@font-face {
+    font-family: baskerville;
+    src: url(fonts/baskervilleoldface.ttf);
+}
+
+body {
+    font-size: 16px;
+}
+
+.page-host section {
+    padding: 20px;
+    margin: 100px 0px 50px 0px;
+    position: absolute;/*?*/
+    /*background-color: #dff0d8;*/
+    background-color: #fcf8e3;
+   /* bottom: 0;
+    top: 0;*/
+
+    text-align: center;
+    opacity: 0.9;
+    /*overflow: auto;*/
+}
+
+@media screen and (min-width: 500px) {
+    .page-host section {
+        margin: 100px 50px 50px 50px;
+        border-radius: 10px;
+    }
+}
+
+/*RSVP section*/
+#rsvp-modal {
+    /*color: darkslategray;*/
+    color: #0e4e0f;
+    background-color: #f5f5f5;
+    font-family: baskerville, Georgia, serif;
+
+    border: 0px;
+    border-radius: 0;
+
+    text-align: center;
+    font-size: 16px;
+
+    width: 310px !important;
+    /*height: 440px;*/
+    height: 400px;
+}
+
+#rsvp-modal .modal-header{
+    padding: 5px;
+    border-bottom: none;
+}
+
+#rsvp-modal .modal-body{
+    max-height: 310px;
+    padding: 0 60px 0 65px;
+    overflow: auto;
+}
+
+@media screen and (min-width: 375px) {
+    #rsvp-modal {
+        width: 365px !important;
+        /*height: 500px;*/
+    }
+
+    /*#rsvp-modal .modal-body{
+        max-height: 370px;
+    }*/
+
+    #rsvp-modal .modal-body .guestname-input{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    #rsvp-modal {
+        width: 400px !important;
+    }
+}
+
+@media screen and (min-width: 510px) {
+    #rsvp-modal {
+        width: 500px !important;
+        /*height: 400px;*/
+    }
+
+/*    #rsvp-modal .modal-body{
+        max-height: 310px;
+    }*/
+
+    #rsvp-modal .modal-body .guestname-input{
+        width: 170px !important;
+    }
+}
+
+#rsvp-modal input {
+    border-radius: 0px; 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#rsvp-modal button {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: white;
+    color: #0e4e0f;
+
+    border: 1px solid #0e4e0f;
+}
+
+#rsvp-modal button.selected {
+    background-color: #0e4e0f;
+    color: white;
+
+    border-radius: 1px;
+}
+
+#rsvp-modal button.accept {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#rsvp-modal button.regret {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#rsvp-modal button:hover {
+    background-color: #0e4e0f;
+    color: white;
+}
+/*End RSVP section*/
+
+/*Detail Page section*/
+.page-host section.detail-page {
+    /*color: darkslategray;*/
+    color: #0e4e0f;
+    font-family: baskerville, Georgia, serif;
+}
+
+table.detail-table {
+    table-layout: fixed;
+    width: 75%;
+    margin: 20px auto;
+    
+    
+}
+
+.page-host section.detail-page button {
+    background-color: #0e4e0f;
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 20px;
+}
+
+.page-host section.detail-page button:hover {
+    background-color: lightseagreen;
+}
+#info-section {
+    margin-top: 20px;
+}
+
+#middle-info {
+    border-left: 2px solid lightgray; 
+    /*margin-bottom: 10px;*/
+}
+
+@media screen and (min-width: 768px) {
+    #middle-info {
+        border-right: 2px solid lightgray;
+        margin-bottom: 10px;
+    }
+}
+
+#right-info {
+    padding-top: 10px;
+}
+
+#accomodations {
+    font-size: 150%;
+}
+@media screen and (min-width: 500px) {
+    #accomodations {
+        font-size: 200%;
+    }
+}
+
+/*End Detail Page section*/
+
+/*Background image and navbar section*/
+
+.wedding-navbar {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .wedding-navbar {
+        margin-top: 20px;
+    }
+}
+
+#wedding-pages{
+    font-weight: bold;
+}
+
+a {
+    color: #333;
+}
+
+.myActive a {
+    color: #057506;
+}
+
+#wedding-pages a:hover{
+    background-color: #fcf8e3; 
+    color: #057506;
+}
+
+#wedding-pages a:focus{
+    background-color: #fcf8e3;
+}
+
+
+/*Menu button*/
+.navbar-toggle {
+    background-color: #fcf8e3; /*mediumseagreen*/
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.navbar-collapse {
+    background-color: #fcf8e3;
+}
+
+.page-host {
+    background: url("images/introSmall.jpg");
+
+    /*height: 100%;*/
+    top: 0!important;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    #wedding-pages {
+        background-color: #fcf8e3;
+        width: 300px;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+
+    .page-host {
+        background: url("images/intro.jpg");
+
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+/*End background image and navbar section*/
+
+/*SVG path section*/
+svg {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (min-height: 712px){
+    svg {
+        display: block;
+    }
+}
+
+svg path.svgpath {
+    stroke: #72ffc3;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+}
+
+svg path.svgpath#a {
+    animation-delay: 1.625s;
+}
+
+svg path.svgpath#are {
+    animation-delay: 2.4s;
+}
+
+svg path.svgpath#inv {
+    animation-delay: 3s;
+}
+
+svg path.svgpath#i {
+    animation-delay: 4.35s;
+}
+
+svg path.svgpath#dot {
+    animation-delay: 4.45s;
+}
+
+svg path.svgpath#line {
+    animation-delay: 4.6s;
+}
+
+svg path.svgpath#ted {
+    animation-delay: 4.7s;
+}
+
+@keyframes dash{
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+/*end SVG path section*/
+
+/*.splash {
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+.splash .message {
+    font-size: 5em;
+    line-height: 1.5em;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-transform: uppercase;
+}
+
+.splash .fa-spinner {
+    text-align: center;
+    display: inline-block;
+    font-size: 5em;
+    margin-top: 50px;
+}*/
+
+.page-host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+section {
+    margin: 0 20px;
+}
+
+.navbar-nav li.loader {
+    margin: 12px 6px 0 6px;
+    visibility: hidden;
+}
+
+.navbar-nav li.loader.active {
+    visibility: visible;
+}
+
+.pictureDetail {
+    max-width: 425px;
+}
